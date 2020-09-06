@@ -16,9 +16,9 @@ Body:
         "lng": 33.427362
     },
     "accuracy": 50,
-    "name": "World cross center",
+    "name": "AAhouse",
     "phone_number": "(+91) 983 893 3937",
-    "address": "AAhouse",
+    "address": "World cross center",
     "types": [
         "shoe park",
         "shop"
@@ -27,7 +27,7 @@ Body:
     "language": "English"
 }
 HTTP/1.1 200 OK
-Date: Fri, 04 Sep 2020 18:32:42 GMT
+Date: Fri, 04 Sep 2020 23:55:29 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,10 +40,48 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "d03093e491f3cc4f10d1db934b4b2de0",
+    "place_id": "564ed73b94ba131390082cdffaecc7b7",
     "scope": "APP",
-    "reference": "8ce90b92531e544ae7cd8258e52c46de8ce90b92531e544ae7cd8258e52c46de",
-    "id": "8ce90b92531e544ae7cd8258e52c46de"
+    "reference": "d59ca8d743ee26cbbba1ed46e04cedfed59ca8d743ee26cbbba1ed46e04cedfe",
+    "id": "d59ca8d743ee26cbbba1ed46e04cedfe"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=564ed73b94ba131390082cdffaecc7b7
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=564ed73b94ba131390082cdffaecc7b7
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 04 Sep 2020 23:55:31 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 240
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-38.383494",
+        "longitude": "33.427362"
+    },
+    "accuracy": "50",
+    "name": "AAhouse",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "World cross center",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "English"
 }
 Request method:	POST
 Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
@@ -63,9 +101,9 @@ Body:
         "lng": 33.427362
     },
     "accuracy": 50,
-    "name": "Sea cross center",
+    "name": "BBhouse",
     "phone_number": "(+91) 983 893 3937",
-    "address": "BBhouse",
+    "address": "Sea cross center",
     "types": [
         "shoe park",
         "shop"
@@ -74,7 +112,7 @@ Body:
     "language": "Spanish"
 }
 HTTP/1.1 200 OK
-Date: Fri, 04 Sep 2020 18:32:44 GMT
+Date: Fri, 04 Sep 2020 23:55:34 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -87,8 +125,46 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "91183c6125e009280a336c3f0211a381",
+    "place_id": "88dfcdfcdcddaceb092aba02066d13af",
     "scope": "APP",
-    "reference": "70bf74d60f51e44b52b60e5b54eaa1da70bf74d60f51e44b52b60e5b54eaa1da",
-    "id": "70bf74d60f51e44b52b60e5b54eaa1da"
+    "reference": "ec3da517a9935737a96c4bf307dde047ec3da517a9935737a96c4bf307dde047",
+    "id": "ec3da517a9935737a96c4bf307dde047"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=88dfcdfcdcddaceb092aba02066d13af
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=88dfcdfcdcddaceb092aba02066d13af
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 04 Sep 2020 23:55:35 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 238
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-38.383494",
+        "longitude": "33.427362"
+    },
+    "accuracy": "50",
+    "name": "BBhouse",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Sea cross center",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "Spanish"
 }
