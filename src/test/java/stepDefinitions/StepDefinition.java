@@ -22,6 +22,7 @@ public class StepDefinition extends Utils {
 	RequestSpecification res;
 	ResponseSpecification resSpec;
 	Response response;
+	static String place_id;
 	
 	TestDataBuild data = new TestDataBuild();
 
@@ -60,12 +61,22 @@ public class StepDefinition extends Utils {
 	@Then("verify place_Id created maps to {string} using {string}")
 	public void verify_place_id_created_maps_to_using(String expectedName, String resource) throws IOException {
 		//request spec
-		String placeId = getJsonPath(response, "place_id");
-		res = given().spec(requestSpecification()).queryParam("place_id", placeId);
+		place_id = getJsonPath(response, "place_id");
+		res = given().spec(requestSpecification()).queryParam("place_id", place_id);
 		user_calls_with_post_http_request(resource, "GET");
 		String actualName = getJsonPath(response, "name");
 		assertEquals(actualName, expectedName);
 		
 	}
+	
+		@Given("DeletePlace Payload")
+		public void delete_place_Payload() throws IOException {
+		    // Write code here that turns the phrase above into concrete actions
+			res = given().spec(requestSpecification().body(data.deletePlacePayload(place_id)));
+			
+		}
+
+
+
 
 }
